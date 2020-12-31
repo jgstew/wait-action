@@ -1,7 +1,7 @@
 FROM busybox:latest
 
-LABEL "com.github.actions.name"="Wait / Sleep"
-LABEL "com.github.actions.description"="Very simple action to sleep for an amount of time (10s, 2m, etc.)"
+LABEL "com.github.actions.name"="Sleep"
+LABEL "com.github.actions.description"="Sleep for an amount of time (10s, 2m, etc.)"
 LABEL "com.github.actions.icon"="clock"
 LABEL "com.github.actions.color"="purple"
 
