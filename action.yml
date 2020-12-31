@@ -1,6 +1,6 @@
 name: 'Wait / Sleep'
 description: 'Very simple action to sleep for an amount of time (10s, 2m, etc.)'
-author: 'Jake Jarvis <jake@jarv.is>'
+author: 'Igor Savin <kibertoad@gmail.com>'
 branding:
   icon: clock
   color: purple
@@ -8,7 +8,6 @@ inputs:
   time:
     description: 'Follows the Linux sleep syntax for time units: a number followed by s for seconds, m for minutes, etc'
     required: true
-runs: 
+runs:
   using: 'docker'
   image: 'Dockerfile'
-  
