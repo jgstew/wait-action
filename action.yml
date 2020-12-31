@@ -1,5 +1,5 @@
-name: 'Wait / Sleep'
-description: 'Very simple action to sleep for an amount of time (10s, 2m, etc.)'
+name: 'Sleep'
+description: 'Sleep for an amount of time (10s, 2m, etc.)'
 author: 'Igor Savin <kibertoad@gmail.com>'
 branding:
   icon: clock
