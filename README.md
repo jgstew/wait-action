@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Sleep for 30 seconds
-      uses: kibertoad/wait-action@master
+      uses: kibertoad/wait-action@1.0.1
       with:
         time: '30s'
 ```
