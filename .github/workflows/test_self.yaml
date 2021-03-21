@@ -21,11 +21,14 @@ on:
 
 jobs:
   test_self:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
     steps:
       - name: Check out self repo
         uses: actions/checkout@v2
-      - name: Use self local action
+      - name: test self - latest
         uses: ./
         with:
           time: '1s'
