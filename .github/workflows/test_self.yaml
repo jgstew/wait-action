@@ -22,6 +22,6 @@ jobs:
     - name: Check out self repo
       uses: actions/checkout@v2
     - name: Use self local action
-      uses: ./action.yml
+      uses: ./
       with:
         time: '3s'
