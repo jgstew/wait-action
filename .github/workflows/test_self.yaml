@@ -19,12 +19,7 @@ on:
 
 jobs:
   test_self:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        # Removed `macos-latest, windows-latest` due to:
-        # - Error: Container action is only supported on Linux
-        os: [ubuntu-latest]
+    runs-on: ubuntu-latest
     steps:
       - name: Check out self repo
         uses: actions/checkout@v2
