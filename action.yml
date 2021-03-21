@@ -7,7 +7,7 @@ branding:
   color: purple
 inputs:
   time:
-    description: 'Follows the Linux sleep syntax for time units: 
+    description: 'Follows the Linux sleep syntax for time units:
       a number followed by s for seconds, m for minutes, etc'
     required: true
 runs:
