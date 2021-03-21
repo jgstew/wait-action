@@ -24,6 +24,7 @@ jobs:
       - name: Check out self repo
         uses: actions/checkout@v2
       - name: test self - latest
+        # this will run the `action.yml` in repo root
         uses: ./
         with:
           time: '1s'
