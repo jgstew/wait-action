@@ -2,4 +2,4 @@
 extends: default
 rules:
   truthy:
-    allowed-values: ['on']
+    allowed-values: ['true', 'false', 'on']
