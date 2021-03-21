@@ -1,0 +1,27 @@
+---
+name: test_self
+
+on:
+  push:
+    paths:
+      - "**.yaml"
+      - "**.yml"
+      - "Dockerfile"
+      - "entrypoint.sh"
+  pull_request:
+    paths:
+      - "**.yaml"
+      - "**.yml"
+      - "Dockerfile"
+      - "entrypoint.sh"
+
+jobs:
+  test_self:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out self repo
+      uses: actions/checkout@v2
+    - name: Use self local action
+      uses: ./action.yml
+      with:
+        time: '3s'
